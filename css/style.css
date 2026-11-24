@@ -1,0 +1,64 @@
+/* =========================================================
+   Booking KOC 101 - style.css
+   Thứ tự: 1. Biến  2. Nền tảng  3. Bố cục chung  4. Header/nav
+           5. Thành phần  6. Form  7. Footer  8. Responsive
+   ========================================================= */
+
+/* 1. Biến màu, chữ, khoảng cách (đổi ở đây là đổi cả trang) */
+:root {
+  --mau-chinh: #0f5c5a;        /* xanh cổ vịt: nút, tiêu đề */
+  --mau-chinh-dam: #0a4240;
+  --mau-nhan: #e0663a;         /* cam san hô: số bước, điểm nhấn */
+  --mau-nen: #f7f4ef;          /* nền kem */
+  --mau-the: #ffffff;
+  --mau-chu: #1f2a2a;
+  --mau-chu-phu: #4d5b5b;
+  --mau-vien: #d9d3c9;
+  --bo-goc: 12px;
+  --rong-toi-da: 1100px;
+  --font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 2. Nền tảng */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--mau-chu);
+  background: var(--mau-nen);
+}
+
+img, svg { max-width: 100%; display: block; }
+
+h1, h2, h3 { line-height: 1.25; color: var(--mau-chinh-dam); }
+h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 .5em; }
+h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin: 0 0 .6em; }
+h3 { font-size: 1.15rem; margin: 0 0 .4em; }
+
+a { color: var(--mau-chinh); }
+a:hover { color: var(--mau-nhan); }
+
+/* Viền focus rõ cho người dùng bàn phím */
+:focus-visible {
+  outline: 3px solid var(--mau-nhan);
+  outline-offset: 3px;
+}
+
+/* Link "Bỏ qua điều hướng": ẩn cho tới khi nhấn Tab */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--mau-chinh);
+  color: #fff;
+  padding: .6rem 1rem;
+  z-index: 100;
+}
+.skip-link:focus { left: 1rem; }
