@@ -62,3 +62,77 @@ a:hover { color: var(--mau-nhan); }
   z-index: 100;
 }
 .skip-link:focus { left: 1rem; }
+
+/* 3. Bố cục chung */
+.container {
+  width: min(100% - 2rem, var(--rong-toi-da));
+  margin-inline: auto;
+}
+
+.section { padding: 3.5rem 0; }
+.section--trang { background: var(--mau-the); }
+
+.lead { font-size: 1.15rem; color: var(--mau-chu-phu); max-width: 60ch; }
+
+/* 4. Header và thanh điều hướng */
+.site-header {
+  background: var(--mau-the);
+  border-bottom: 1px solid var(--mau-vien);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .8rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--mau-chinh-dam);
+  text-decoration: none;
+}
+.logo svg { width: 32px; height: 32px; }
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: .3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  display: block;
+  padding: .45rem .8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--mau-chu);
+  font-weight: 500;
+}
+.nav a:hover { background: var(--mau-nen); color: var(--mau-chinh); }
+.nav a[aria-current="page"] { background: var(--mau-chinh); color: #fff; }
+
+/* 7. Footer */
+.site-footer {
+  background: var(--mau-chinh-dam);
+  color: #d8e6e5;
+  padding: 2rem 0;
+  font-size: .95rem;
+}
+.site-footer a { color: #fff; }
+.site-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.site-footer p { margin: .2rem 0; }
