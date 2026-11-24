@@ -8,7 +8,7 @@
 :root {
   --mau-chinh: #0f5c5a;        /* xanh cổ vịt: nút, tiêu đề */
   --mau-chinh-dam: #0a4240;
-  --mau-nhan: #e0663a;         /* cam san hô: số bước, điểm nhấn */
+  --mau-nhan: #b84d26;         /* cam đậm: số bước, điểm nhấn. Đổi từ #e0663a (tương phản 3,43:1) sang #b84d26 (5,09:1) */
   --mau-nen: #f7f4ef;          /* nền kem */
   --mau-the: #ffffff;
   --mau-chu: #1f2a2a;
