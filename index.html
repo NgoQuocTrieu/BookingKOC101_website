@@ -33,7 +33,70 @@
   </header>
   <!-- ===== NỘI DUNG CHÍNH: id="noi-dung" là đích của link bỏ qua điều hướng ===== -->
   <main id="noi-dung">
-    <!-- Nội dung trang chủ sẽ thêm ở commit sau -->
+    <!-- ----- Phần 1. HERO: tiêu đề, mô tả, 2 nút (R1, R3) và hình SVG tự vẽ ----- -->
+    <section class="hero" aria-labelledby="tieu-de-chinh">
+      <div class="container">
+        <div>
+          <h1 id="tieu-de-chinh">Booking KOC TikTok cho người mới bắt đầu</h1>
+          <p class="lead">Website gom quy trình 6 bước, bảng tiêu chí chọn KOC và mẫu tin nhắn liên hệ. Người mới đọc trong khoảng 15 phút là có thể bắt tay vào buổi booking đầu tiên.</p>
+          <div class="nhom-nut">
+            <a class="btn" href="quy-trinh.html">Xem quy trình 6 bước</a>
+            <a class="btn btn--vien" href="mau-tin-nhan.html">Lấy mẫu tin nhắn</a>
+          </div>
+        </div>
+        <figure class="hero__hinh">
+          <svg viewBox="0 0 320 220" role="img" aria-labelledby="hinh-hero">
+            <title id="hinh-hero">Sơ đồ: thương hiệu gửi brief, người booking tìm KOC, KOC đăng video</title>
+            <rect x="10" y="80" width="80" height="60" rx="10" fill="#0f5c5a"/>
+            <text x="50" y="115" fill="#fff" font-size="13" text-anchor="middle" font-family="Arial">Brief</text>
+            <rect x="120" y="80" width="80" height="60" rx="10" fill="#e0663a"/>
+            <text x="160" y="115" fill="#fff" font-size="13" text-anchor="middle" font-family="Arial">Booking</text>
+            <rect x="230" y="80" width="80" height="60" rx="10" fill="#0f5c5a"/>
+            <text x="270" y="115" fill="#fff" font-size="13" text-anchor="middle" font-family="Arial">Video KOC</text>
+            <path d="M92 110h24M202 110h24" stroke="#4d5b5b" stroke-width="3" marker-end="url(#mui-ten)"/>
+            <defs><marker id="mui-ten" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#4d5b5b"/></marker></defs>
+            <text x="160" y="180" fill="#4d5b5b" font-size="12" text-anchor="middle" font-family="Arial">Sheet theo dõi: tên KOC, kênh liên hệ, trạng thái</text>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- Phần 2. AI DÙNG WEBSITE: 3 thẻ, lưới 3 cột (CSS .grid-3) ----- -->
+    <section class="section section--trang" aria-labelledby="ai-dung">
+      <div class="container">
+        <h2 id="ai-dung">Website này dành cho ai?</h2>
+        <ul class="grid-3">
+          <li class="card">
+            <h3>Sinh viên làm part-time</h3>
+            <p>Mới nhận việc booking, chưa biết bắt đầu tìm KOC từ đâu và nhắn gì cho lần liên hệ đầu.</p>
+          </li>
+          <li class="card">
+            <h3>Thực tập sinh marketing</h3>
+            <p>Cần một danh sách kiểm tra để không bỏ sót bước ghi sheet, kiểm tra trùng và theo dõi video.</p>
+          </li>
+          <li class="card">
+            <h3>Chủ shop nhỏ</h3>
+            <p>Tự đi booking cho sản phẩm của mình, muốn biết thứ tự kênh liên hệ và cách ghi chép.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- Phần 3. 6 BƯỚC TÓM TẮT: danh sách có thứ tự <ol> (R1) ----- -->
+    <section class="section" aria-labelledby="tom-tat">
+      <div class="container">
+        <h2 id="tom-tat">6 bước tóm tắt</h2>
+        <ol class="grid-3">
+          <li class="card"><span class="so-buoc">1</span><h3>Đọc brief</h3><p>Sản phẩm, ngân sách, số video, hạn đăng.</p></li>
+          <li class="card"><span class="so-buoc">2</span><h3>Tìm KOC</h3><p>Lọc theo ngành hàng, lượt theo dõi, doanh thu video.</p></li>
+          <li class="card"><span class="so-buoc">3</span><h3>Ghi sheet</h3><p>Nhập thông tin, kiểm tra KOC đã có trong danh sách chưa.</p></li>
+          <li class="card"><span class="so-buoc">4</span><h3>Liên hệ</h3><p>Theo thứ tự Zalo, Gmail, rồi tin nhắn TikTok.</p></li>
+          <li class="card"><span class="so-buoc">5</span><h3>Chốt hợp tác</h3><p>Gửi brief, thống nhất giá và lịch gửi sản phẩm mẫu.</p></li>
+          <li class="card"><span class="so-buoc">6</span><h3>Theo dõi video</h3><p>Ghi link video và số liệu sau khi KOC đăng.</p></li>
+        </ol>
+        <p><a href="quy-trinh.html">Đọc chi tiết từng bước</a></p>
+      </div>
+    </section>
   </main>
   <!-- ===== FOOTER: mô tả website, số phiên bản (để đối chiếu URL với tag trên GitHub) ===== -->
   <footer class="site-footer">
