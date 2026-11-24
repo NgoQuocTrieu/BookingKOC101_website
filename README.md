@@ -33,6 +33,7 @@ booking-koc-101/
 1. Tải repository về (Code > Download ZIP) hoặc `git clone`.
 2. Mở `index.html` bằng Chrome, Edge hoặc Firefox. Không cần cài thêm gì.
 3. Bản công khai: xem link GitHub Pages ở phần About của repository.
+4. Link web demo: https://ngoquoctrieu.github.io/BookingKOC101_website/index.html
 
 ## Công nghệ
 
