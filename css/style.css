@@ -245,6 +245,32 @@ th, td {
 thead th { background: var(--mau-chinh); color: #fff; }
 tbody tr:nth-child(even) { background: #faf8f4; }
 
+/* Mẫu tin nhắn */
+.mau-tin {
+  background: var(--mau-the);
+  border: 1px solid var(--mau-vien);
+  border-radius: var(--bo-goc);
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.2rem;
+}
+.mau-tin pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+  background: var(--mau-nen);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: .6rem 0 0;
+}
+.nhan {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .15rem .6rem;
+  border-radius: 999px;
+  background: var(--mau-chinh);
+  color: #fff;
+}
+
 /* 7. Footer */
 .site-footer {
   background: var(--mau-chinh-dam);

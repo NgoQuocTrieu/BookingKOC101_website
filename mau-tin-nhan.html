@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Booking KOC 101 | mau-tin-nhan.html -->
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mẫu tin nhắn Zalo, email và TikTok để liên hệ KOC lần đầu.">
+  <title>Booking KOC 101 | Mẫu tin nhắn</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <!-- Một file CSS dùng chung cho cả website -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===== Link bỏ qua điều hướng: hiện ra khi nhấn Tab, giúp người dùng bàn phím nhảy thẳng vào nội dung ===== -->
+  <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+
+  <!-- ===== HEADER: logo + menu, giống nhau ở cả 5 trang. Trang đang mở có aria-current="page" ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f5c5a"/><path d="M18 20h20a8 8 0 0 1 0 16H26l-8 8V20z" fill="#fff"/><circle cx="44" cy="44" r="8" fill="#e0663a"/></svg>
+        Booking KOC 101
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="quy-trinh.html">Quy trình</a></li>
+          <li><a href="mau-tin-nhan.html" aria-current="page">Mẫu tin nhắn</a></li>
+          <li><a href="lien-he.html">Hỏi đáp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== NỘI DUNG CHÍNH: id="noi-dung" là đích của link bỏ qua điều hướng ===== -->
+  <main id="noi-dung">
+    <!-- ----- Phần 1. TIÊU ĐỀ TRANG ----- -->
+    <div class="page-title">
+      <div class="container">
+        <h1>Mẫu tin nhắn liên hệ KOC</h1>
+        <p class="lead">Ba mẫu cho ba kênh ở bước 4. Thay phần trong dấu &lt; &gt; bằng thông tin thật trước khi gửi.</p>
+      </div>
+    </div>
+
+    <!-- ----- Phần 2. 3 MẪU TIN NHẮN: Zalo, Gmail, TikTok theo thứ tự bước 4. <pre> giữ nguyên xuống dòng (R3) ----- -->
+    <section class="section section--trang" aria-labelledby="cac-mau">
+      <div class="container">
+        <h2 id="cac-mau">Mẫu theo kênh</h2>
+
+        <article class="mau-tin">
+          <span class="nhan">Zalo</span>
+          <h3>Tin nhắn Zalo lần đầu</h3>
+          <p>Ngắn, đi thẳng vào đề nghị, vì Zalo hiển thị vài dòng đầu trong thông báo.</p>
+          <pre>Chào &lt;tên KOC&gt;, mình là &lt;tên bạn&gt; bên &lt;tên thương hiệu&gt;.
+Mình xem video &lt;tên video&gt; của bạn và muốn mời bạn review &lt;tên sản phẩm&gt;.
+Bạn có nhận booking tháng này không? Nếu có, bạn gửi mình bảng giá nhé.</pre>
+        </article>
+
+        <article class="mau-tin">
+          <span class="nhan">Gmail</span>
+          <h3>Email mời hợp tác</h3>
+          <p>Tiêu đề ghi rõ tên thương hiệu và sản phẩm để KOC lọc thư dễ.</p>
+          <pre>Tiêu đề: [&lt;Tên thương hiệu&gt;] Mời hợp tác review &lt;tên sản phẩm&gt;
+
+Chào &lt;tên KOC&gt;,
+Mình là &lt;tên bạn&gt;, phụ trách booking của &lt;tên thương hiệu&gt;.
+Bên mình cần &lt;số video&gt; video review &lt;tên sản phẩm&gt;, đăng trước ngày &lt;ngày&gt;.
+Bạn cho mình xin bảng giá và lịch nhận job nhé.
+Cảm ơn bạn,
+&lt;tên bạn&gt; - &lt;số điện thoại&gt;</pre>
+        </article>
+
+        <article class="mau-tin">
+          <span class="nhan">TikTok</span>
+          <h3>Tin nhắn TikTok</h3>
+          <p>TikTok giới hạn tin nhắn với người lạ, nên một tin ngắn kèm cách liên hệ khác.</p>
+          <pre>Chào bạn, mình bên &lt;tên thương hiệu&gt; muốn mời bạn review &lt;tên sản phẩm&gt;.
+Bạn cho mình xin Zalo hoặc email để gửi brief nhé.</pre>
+        </article>
+      </div>
+    </section>
+
+    <!-- ----- Phần 3. DANH SÁCH KIỂM TRA TRƯỚC KHI GỬI ----- -->
+    <section class="section" aria-labelledby="kiem-tra">
+      <div class="container">
+        <h2 id="kiem-tra">Kiểm tra trước khi bấm gửi</h2>
+        <ul>
+          <li>Đã thay hết phần trong dấu &lt; &gt;.</li>
+          <li>Tên KOC viết đúng như trên kênh.</li>
+          <li>KOC chưa có trong sheet (đã kiểm tra trùng ở bước 3).</li>
+          <li>Đã ghi ngày liên hệ và kênh liên hệ vào sheet.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- ===== FOOTER: mô tả website, số phiên bản (để đối chiếu URL với tag trên GitHub) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p><strong>Booking KOC 101</strong>: website tĩnh HTML5/CSS3, bài tập lớn A3 học phần FIT4014.</p>
+        <p>Nội dung viết từ kinh nghiệm làm booking của sinh viên thực hiện; không đại diện cho thương hiệu nào.</p>
+      </div>
+      <p><a href="#noi-dung">Lên đầu trang</a></p>
+    </div>
+  </footer>
+</body>
+</html>
