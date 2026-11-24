@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Booking KOC 101 | lien-he.html -->
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Câu hỏi thường gặp về booking KOC và form gửi câu hỏi.">
+  <title>Booking KOC 101 | Hỏi đáp</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <!-- Một file CSS dùng chung cho cả website -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===== Link bỏ qua điều hướng: hiện ra khi nhấn Tab, giúp người dùng bàn phím nhảy thẳng vào nội dung ===== -->
+  <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+
+  <!-- ===== HEADER: logo + menu, giống nhau ở cả 5 trang. Trang đang mở có aria-current="page" ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f5c5a"/><path d="M18 20h20a8 8 0 0 1 0 16H26l-8 8V20z" fill="#fff"/><circle cx="44" cy="44" r="8" fill="#e0663a"/></svg>
+        Booking KOC 101
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="quy-trinh.html">Quy trình</a></li>
+          <li><a href="mau-tin-nhan.html">Mẫu tin nhắn</a></li>
+          <li><a href="lien-he.html" aria-current="page">Hỏi đáp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== NỘI DUNG CHÍNH: id="noi-dung" là đích của link bỏ qua điều hướng ===== -->
+  <main id="noi-dung">
+    <!-- ----- Phần 1. TIÊU ĐỀ TRANG ----- -->
+    <div class="page-title">
+      <div class="container">
+        <h1>Hỏi đáp</h1>
+        <p class="lead">Đọc các câu hỏi thường gặp trước. Chưa có câu trả lời thì gửi câu hỏi qua form.</p>
+      </div>
+    </div>
+
+    <section class="section section--trang" aria-labelledby="hoi-dap">
+      <div class="container form-wrap">
+        <!-- ----- Phần 2. CÂU HỎI THƯỜNG GẶP: <details>/<summary> mở-đóng không cần JavaScript ----- -->
+        <div>
+          <h2 id="hoi-dap">Câu hỏi thường gặp</h2>
+          <details>
+            <summary>KOC không trả lời thì nhắn lại sau bao lâu?</summary>
+            <p>Đợi 2 đến 3 ngày rồi nhắn lại một lần qua kênh tiếp theo trong thứ tự Zalo, Gmail, TikTok. Sau đó vẫn im lặng thì ghi "Không phản hồi" vào sheet.</p>
+          </details>
+          <details>
+            <summary>Booking đổi sản phẩm là gì?</summary>
+            <p>KOC nhận sản phẩm miễn phí và đăng video, không nhận tiền phí. Hình thức này hay dùng với KOC ít follower.</p>
+          </details>
+          <details>
+            <summary>KOC báo giá cao hơn ngân sách thì làm sao?</summary>
+            <p>Báo lại quản lý kèm số liệu video của KOC. Không tự đồng ý mức giá ngoài brief.</p>
+          </details>
+          <details>
+            <summary>Có được lấy số điện thoại KOC từ nhóm Facebook không?</summary>
+            <p>Không. Chỉ dùng thông tin liên hệ KOC tự công khai trên kênh để nhận hợp tác.</p>
+          </details>
+        </div>
+
+        <!-- ----- Phần 3. FORM GỬI CÂU HỎI (R4): trình duyệt tự kiểm tra bằng required, type="email", minlength.
+             Hợp lệ thì chuyển sang cam-on.html (method="get"), không lưu dữ liệu lên máy chủ. ----- -->
+        <form action="cam-on.html" method="get" aria-labelledby="tieu-de-form">
+          <h2 id="tieu-de-form">Gửi câu hỏi</h2>
+          <p><small>Các trường có dấu <span class="bat-buoc">*</span> là bắt buộc.</small></p>
+
+          <fieldset>
+            <legend>Thông tin của bạn</legend>
+            <div class="truong">
+              <label for="ho-ten">Họ tên <span class="bat-buoc">*</span></label>
+              <input id="ho-ten" name="ho-ten" type="text" required minlength="2" autocomplete="name">
+            </div>
+            <div class="truong">
+              <label for="email">Email <span class="bat-buoc">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="ten@gmail.com">
+            </div>
+            <div class="truong">
+              <label for="vai-tro">Bạn là</label>
+              <select id="vai-tro" name="vai-tro">
+                <option value="sinh-vien">Sinh viên làm part-time</option>
+                <option value="thuc-tap">Thực tập sinh marketing</option>
+                <option value="chu-shop">Chủ shop</option>
+                <option value="khac">Khác</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Câu hỏi về bước nào?</legend>
+            <div class="lua-chon">
+              <label><input type="radio" name="buoc" value="tim-koc" checked> Tìm KOC</label>
+              <label><input type="radio" name="buoc" value="lien-he"> Liên hệ</label>
+              <label><input type="radio" name="buoc" value="chot"> Chốt hợp tác</label>
+              <label><input type="radio" name="buoc" value="theo-doi"> Theo dõi video</label>
+            </div>
+          </fieldset>
+
+          <div class="truong">
+            <label for="cau-hoi">Câu hỏi <span class="bat-buoc">*</span></label>
+            <textarea id="cau-hoi" name="cau-hoi" required minlength="10" aria-describedby="goi-y-cau-hoi"></textarea>
+            <small id="goi-y-cau-hoi">Tối thiểu 10 ký tự.</small>
+          </div>
+
+          <div class="truong lua-chon">
+            <label><input type="checkbox" name="dong-y" required> Tôi đồng ý để nhóm dùng email này trả lời câu hỏi <span class="bat-buoc">*</span></label>
+          </div>
+
+          <button class="btn" type="submit">Gửi câu hỏi</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- ===== FOOTER: mô tả website, số phiên bản (để đối chiếu URL với tag trên GitHub) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p><strong>Booking KOC 101</strong>: website tĩnh HTML5/CSS3, bài tập lớn A3 học phần FIT4014.</p>
+        <p>Nội dung viết từ kinh nghiệm làm booking của sinh viên thực hiện; không đại diện cho thương hiệu nào.</p>
+      </div>
+      <p><a href="#noi-dung">Lên đầu trang</a></p>
+    </div>
+  </footer>
+</body>
+</html>

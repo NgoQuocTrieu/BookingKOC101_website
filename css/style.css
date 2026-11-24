@@ -271,6 +271,56 @@ tbody tr:nth-child(even) { background: #faf8f4; }
   color: #fff;
 }
 
+/* Câu hỏi thường gặp dùng <details> */
+details {
+  background: var(--mau-the);
+  border: 1px solid var(--mau-vien);
+  border-radius: 8px;
+  padding: .8rem 1rem;
+  margin-bottom: .6rem;
+}
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: .6rem 0 0; color: var(--mau-chu-phu); }
+
+/* 6. Form */
+.form-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2rem;
+  align-items: start;
+}
+form {
+  background: var(--mau-the);
+  border: 1px solid var(--mau-vien);
+  border-radius: var(--bo-goc);
+  padding: 1.5rem;
+}
+fieldset { border: 0; padding: 0; margin: 0 0 1rem; }
+legend { font-weight: 700; margin-bottom: .6rem; color: var(--mau-chinh-dam); }
+.truong { margin-bottom: 1rem; }
+.truong label { display: block; font-weight: 600; margin-bottom: .3rem; }
+.truong small { color: var(--mau-chu-phu); }
+
+input, select, textarea {
+  width: 100%;
+  padding: .65rem .75rem;
+  border: 1px solid #a9a296;
+  border-radius: 8px;
+  font: inherit;
+  background: #fff;
+}
+textarea { min-height: 120px; resize: vertical; }
+
+/* Báo lỗi bằng CSS: chỉ đỏ khi người dùng đã nhập mà sai */
+input:user-invalid,
+textarea:user-invalid,
+select:user-invalid { border-color: #b3261e; background: #fff5f4; }
+
+.lua-chon { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+.lua-chon label { font-weight: 400; display: flex; align-items: center; gap: .4rem; }
+.lua-chon input { width: auto; }
+.bat-buoc { color: #b3261e; }
+
 /* 7. Footer */
 .site-footer {
   background: var(--mau-chinh-dam);
