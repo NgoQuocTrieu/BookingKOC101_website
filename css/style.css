@@ -336,3 +336,36 @@ select:user-invalid { border-color: #b3261e; background: #fff5f4; }
   gap: 1rem;
 }
 .site-footer p { margin: .2rem 0; }
+
+/* 8. Responsive */
+
+/* Máy tính bảng: lưới 2 cột, hero 1 cột */
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .hero .container,
+  .form-wrap { grid-template-columns: 1fr; }
+  .hero__hinh { max-width: 420px; }
+}
+
+/* Điện thoại: 1 cột, menu xuống dòng dưới logo */
+@media (max-width: 640px) {
+  .site-header { position: static; }
+  .site-header .container { flex-direction: column; align-items: flex-start; }
+  .nav ul { flex-wrap: wrap; }
+  .nav a { padding: .4rem .7rem; font-size: .95rem; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .section { padding: 2.5rem 0; }
+  .hero { padding: 2.5rem 0 2rem; }
+  .btn { width: 100%; text-align: center; }
+}
+
+/* Tôn trọng cài đặt giảm chuyển động của hệ điều hành */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Khi in: bỏ menu, chữ đen trên nền trắng */
+@media print {
+  .site-header, .site-footer, .skip-link { display: none; }
+  body { background: #fff; }
+}
