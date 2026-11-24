@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Booking KOC 101 | quy-trinh.html -->
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chi tiết 6 bước booking KOC TikTok và bảng tiêu chí chọn KOC.">
+  <title>Booking KOC 101 | Quy trình 6 bước</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <!-- Một file CSS dùng chung cho cả website -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===== Link bỏ qua điều hướng: hiện ra khi nhấn Tab, giúp người dùng bàn phím nhảy thẳng vào nội dung ===== -->
+  <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+
+  <!-- ===== HEADER: logo + menu, giống nhau ở cả 5 trang. Trang đang mở có aria-current="page" ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f5c5a"/><path d="M18 20h20a8 8 0 0 1 0 16H26l-8 8V20z" fill="#fff"/><circle cx="44" cy="44" r="8" fill="#e0663a"/></svg>
+        Booking KOC 101
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="quy-trinh.html" aria-current="page">Quy trình</a></li>
+          <li><a href="mau-tin-nhan.html">Mẫu tin nhắn</a></li>
+          <li><a href="lien-he.html">Hỏi đáp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== NỘI DUNG CHÍNH: id="noi-dung" là đích của link bỏ qua điều hướng ===== -->
+  <main id="noi-dung">
+    <!-- ----- Phần 1. TIÊU ĐỀ TRANG ----- -->
+    <div class="page-title">
+      <div class="container">
+        <h1>Quy trình booking 6 bước</h1>
+        <p class="lead">Mỗi bước ghi việc cần làm và lỗi người mới hay gặp. Làm xong bước nào thì cập nhật cột "Trạng thái" trong sheet theo dõi.</p>
+      </div>
+    </div>
+
+    <!-- ----- Phần 2. DÒNG THỜI GIAN 6 BƯỚC: mỗi bước là một <article>, hộp .luu-y ghi lỗi hay gặp (R1) ----- -->
+    <section class="section section--trang" aria-labelledby="cac-buoc">
+      <div class="container">
+        <h2 id="cac-buoc">Các bước</h2>
+        <ol class="timeline">
+          <li>
+            <span class="so-buoc" aria-hidden="true">1</span>
+            <article>
+              <h3>Đọc brief của thương hiệu</h3>
+              <p>Trước khi tìm KOC, ghi lại 4 thông tin từ brief:</p>
+              <ul>
+                <li>Sản phẩm và ngành hàng (ví dụ: chăm sóc răng miệng).</li>
+                <li>Ngân sách cho mỗi video hoặc có nhận booking đổi sản phẩm không.</li>
+                <li>Số video cần và hạn đăng.</li>
+                <li>Yêu cầu nội dung: review, unbox, có gắn giỏ hàng hay không.</li>
+              </ul>
+              <p class="luu-y">Thiếu một trong 4 thông tin trên thì hỏi lại quản lý trước khi liên hệ KOC.</p>
+            </article>
+          </li>
+          <li>
+            <span class="so-buoc" aria-hidden="true">2</span>
+            <article>
+              <h3>Tìm KOC trên công cụ dữ liệu TikTok</h3>
+              <p>Dùng công cụ phân tích TikTok Shop (ví dụ Kalodata) để lọc KOC theo ngành hàng của sản phẩm. Xem các chỉ số trong bảng tiêu chí bên dưới rồi mới đưa KOC vào danh sách.</p>
+              <p class="luu-y">Mở kênh TikTok của KOC xem 5 video gần nhất. Số liệu trên công cụ có thể chậm vài ngày so với kênh thật.</p>
+            </article>
+          </li>
+          <li>
+            <span class="so-buoc" aria-hidden="true">3</span>
+            <article>
+              <h3>Ghi vào sheet và kiểm tra trùng</h3>
+              <p>Mỗi KOC một dòng: tên kênh, link TikTok, lượt theo dõi, số Zalo hoặc email công khai trên bio, ngày liên hệ, trạng thái.</p>
+              <p class="luu-y">Tìm theo link kênh (Ctrl + F) trước khi thêm dòng mới. Hai người cùng nhắn một KOC khiến thương hiệu trông thiếu chuyên nghiệp.</p>
+            </article>
+          </li>
+          <li>
+            <span class="so-buoc" aria-hidden="true">4</span>
+            <article>
+              <h3>Liên hệ theo thứ tự Zalo, Gmail, TikTok</h3>
+              <p>Zalo thường được trả lời nhanh nhất nên thử trước. KOC không có Zalo thì gửi email. Hai kênh trên đều không có thì nhắn tin trong TikTok.</p>
+              <p class="luu-y">Chỉ dùng số điện thoại và email KOC tự công khai để nhận hợp tác. Không tìm số qua nguồn khác.</p>
+            </article>
+          </li>
+          <li>
+            <span class="so-buoc" aria-hidden="true">5</span>
+            <article>
+              <h3>Chốt hợp tác</h3>
+              <p>Khi KOC đồng ý, gửi brief đầy đủ, thống nhất mức phí (hoặc booking đổi sản phẩm), địa chỉ nhận hàng và ngày đăng video.</p>
+              <p class="luu-y">Ghi lại thỏa thuận bằng tin nhắn để hai bên cùng xem lại được.</p>
+            </article>
+          </li>
+          <li>
+            <span class="so-buoc" aria-hidden="true">6</span>
+            <article>
+              <h3>Theo dõi video sau khi đăng</h3>
+              <p>Dán link video vào sheet. Sau 7 ngày ghi lượt xem, lượt thích và số đơn (nếu có giỏ hàng) để quản lý chọn KOC cho đợt sau.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ----- Phần 3. BẢNG TIÊU CHÍ: bọc trong .bang-cuon để cuộn ngang trên điện thoại (R2, R5) ----- -->
+    <section class="section" aria-labelledby="tieu-chi">
+      <div class="container">
+        <h2 id="tieu-chi">Bảng tiêu chí chọn KOC</h2>
+        <p>Ngưỡng cụ thể do brief của từng thương hiệu quy định. Bảng dưới liệt kê chỉ số cần xem và lý do.</p>
+        <div class="bang-cuon">
+          <table>
+            <caption>Các chỉ số cần xem trước khi liên hệ KOC</caption>
+            <thead>
+              <tr><th scope="col">Chỉ số</th><th scope="col">Xem ở đâu</th><th scope="col">Vì sao cần xem</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Ngành hàng của kênh</td><td>Công cụ dữ liệu, video gần đây</td><td>KOC review đúng ngành thì người xem tin hơn</td></tr>
+              <tr><td>Lượt theo dõi</td><td>Trang kênh TikTok</td><td>Phải nằm trong khoảng brief yêu cầu</td></tr>
+              <tr><td>Doanh thu video 30 ngày</td><td>Công cụ dữ liệu</td><td>Cho biết KOC có bán được hàng qua video không</td></tr>
+              <tr><td>Lượt xem trung bình</td><td>5 video gần nhất</td><td>Kênh nhiều follower nhưng ít view thì hiệu quả thấp</td></tr>
+              <tr><td>Thông tin liên hệ công khai</td><td>Bio TikTok</td><td>Quyết định kênh liên hệ ở bước 4</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ===== FOOTER: mô tả website, số phiên bản (để đối chiếu URL với tag trên GitHub) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p><strong>Booking KOC 101</strong>: website tĩnh HTML5/CSS3, bài tập lớn A3 học phần FIT4014.</p>
+        <p>Nội dung viết từ kinh nghiệm làm booking của sinh viên thực hiện; không đại diện cho thương hiệu nào.</p>
+      </div>
+      <p><a href="#noi-dung">Lên đầu trang</a></p>
+    </div>
+  </footer>
+</body>
+</html>
